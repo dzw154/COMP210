@@ -14,13 +14,13 @@ public class JavaWarmUp {
         // Date Time1 Category Fee Quantity Time2 AsmCost
 
         // create corresponding size arrays
-        String date[] = new String[n];
-        String time1[] = new String[n];
-        String category[] = new String[n];
-        double fee[] = new double[n];
-        int quantity[] = new int[n];
-        double time2[] = new double[n];
-        double asmCost[] = new double[n];
+        String[] date = new String[n];
+        String[] time1 = new String[n];
+        String[] category = new String[n];
+        double[] fee = new double[n];
+        int[] quantity = new int[n];
+        double[] time2 = new double[n];
+        double[] asmCost = new double[n];
 
 		// TODO: Fill in the above arrays with data entered from the console.
         for (int i = 0; i < n; i++) {
