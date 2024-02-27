@@ -8,7 +8,7 @@ public class Main {
         list.add(20);
         list.add(60);
         list.add(30);
-        System.out.println("list = " + list.toString());
+        System.out.println("list =  " + list.toString());
         System.out.println("size of list = " + list.size());
         System.out.println("list contains 10?: " + list.contains(10));     // implemented
         System.out.println("list contains 50?: " + list.contains(50));
