@@ -137,7 +137,7 @@ public class LinkedList<T> {
      * @param list2
      */
     public void merge(LinkedList list2) {
-        Node<T> curr2 = list2.getHead();
+        Node curr2 = list2.getHead();
         int size2 = list2.size();
         while ((curr2 != null)) {
             int i = 0;
