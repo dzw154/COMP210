@@ -14,7 +14,7 @@ public class Main {
         System.out.println("list contains 50?: " + list.contains(50));
         System.out.println("set element at index 2 to be 10");
         list.set(2, 10);
-        System.out.println("get element at index 2 = " + list.get(2));
+        System.out.println("get element at index 2 = "  + list.get(2));
         System.out.println("list = " + list.toString());
         System.out.println("Last Index of element 10 in list = " + list.lastIndexOf(10));
 
