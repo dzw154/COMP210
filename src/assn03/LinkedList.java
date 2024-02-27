@@ -48,7 +48,7 @@ public class LinkedList<T> {
      * @param list2 - the list to compare with the current list
      * @return true if the lists have the same elements in the same order, false otherwise
      */
-    public boolean areEqual(LinkedList list2) {
+    public boolean isEqual(LinkedList list2) {
         Node<T> current = head;
         if (list2.size()!=size)
             return false;

@@ -33,7 +33,7 @@ public class Main {
         list2.add(10);
         list2.add(10);
         System.out.println("list2 = " + list2.toString());
-        System.out.println("Task 2: list == list2 ?: " + list.areEqual(list2)); // not yet implemented
+        System.out.println("Task 2: list == list2 ?: " + list.isEqual(list2)); // not yet implemented
 
         // Test task 3
         System.out.println("list2 before removing repeats = " + list2.toString());
