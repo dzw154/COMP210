@@ -120,7 +120,7 @@ public class LinkedList<T> {
 
     /**
      * Task5
-     * Merge the given linked list2 into the current list. The 2 lists will always be
+     * Merge  the given linked list2 into the current list. The 2 lists will always be
      * either the same size, or the current list will be longer than list2.
      * The examples below show how to handle each case.
      *
