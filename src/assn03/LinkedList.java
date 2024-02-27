@@ -142,7 +142,7 @@ public class LinkedList<T> {
         while ((curr2 != null)) {
             int i = 0;
             if(i<size2){
-                add(curr2);
+                add(curr2.getValue());
             }
             i++;
             curr2 = curr2.getNext();
@@ -192,7 +192,7 @@ public class LinkedList<T> {
         return arr;
     }
 
-    public void add(Object element) { // Adds an object to the end of the linked list
+    public void add(Object element) { // Adds a node containing an object to the end of the linked list
         Node<T> newNode = new NodeImpl<T>((T) element, null);
         if(isEmpty()) {
             head = newNode;
