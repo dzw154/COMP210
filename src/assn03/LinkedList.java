@@ -142,7 +142,7 @@ public class LinkedList<T> {
         int i = 0;
         while ((curr2 != null)) {
             if(i<size2){
-                add(i, curr2.getValue());
+                add(i+1, curr2.getValue());
             }
             i++;
             curr2 = curr2.getNext();
