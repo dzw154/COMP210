@@ -38,7 +38,7 @@ public class Main {
         // Test task 3
         System.out.println("list2 before removing repeats = " + list2.toString());
         list2.removeRepeats();
-        System.out.println("Task 3: list after removing repeats = " + list2.toString());
+        System.out.println("Task 3: list after removing repeats = " +  list2.toString());
 
         // Test task 4
         LinkedList list3 = new LinkedList();
