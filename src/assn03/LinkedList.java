@@ -48,7 +48,7 @@ public class LinkedList<T> {
      * @param list2 - the list to compare with the current list
      * @return true if the lists have the same elements in the same order, false otherwise
      */
-    public boolean isEqual(LinkedList list2) {
+    public boolean areEqual(LinkedList list2) {
         Node<T> current = head;
         if (list2.size()!=size)
             return false;
@@ -99,7 +99,7 @@ public class LinkedList<T> {
         Node<T> current = head;
         int currSize = size;
         int i = 1;
-        if (currSize != 1){
+        if (currSize > 1){
             while (i<currSize){
                 add(get(currSize-i));
                 i++;
