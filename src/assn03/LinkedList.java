@@ -78,8 +78,9 @@ public class LinkedList<T> {
         while ((current != null) && current.hasNext()){
             Node<T> next = current.getNext();
             if (current.getValue()==next.getValue()){
-                remove(current);
+                remove(current.getValue());
             }
+            current = current.getNext();
         }
     }
 
@@ -95,6 +96,21 @@ public class LinkedList<T> {
      *
      */
     public void reverse() {
+        Node<T> current = head;
+        int currSize = size;
+        int i = 1;
+        if (currSize != 1){
+            while (i<currSize){
+                add(get(currSize-i));
+                i++;
+            }
+            add(get(0));
+        }
+        while (i>0){
+            remove(current.getValue());
+            current = current.getNext();
+            i--;
+        }
 
     }
 
