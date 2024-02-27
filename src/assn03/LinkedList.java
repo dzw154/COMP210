@@ -144,7 +144,7 @@ public class LinkedList<T> {
             if(i<size2){
                 add(i+1, curr2.getValue());
             }
-            i++;
+            i+=2;
             curr2 = curr2.getNext();
         }
     }
