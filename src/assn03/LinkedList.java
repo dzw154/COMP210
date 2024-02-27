@@ -139,11 +139,9 @@ public class LinkedList<T> {
     public void merge(LinkedList list2) {
         Node<T> curr2 = list2.getHead();
         int size2 = list2.size();
-        int i = 0;
+        int i = 1;
         while ((curr2 != null)) {
-            if(i<size2){
-                add(i+1, curr2.getValue());
-            }
+            add(i, curr2.getValue());
             i+=2;
             curr2 = curr2.getNext();
         }

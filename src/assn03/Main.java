@@ -64,9 +64,7 @@ public class Main {
         LinkedList list5 = new LinkedList();
         list5.add(5);
         list5.add(6);
-        list5.add(7);
-        list5.add(8);
-        list5.add(9);
+
         System.out.println("List4: "+list4.toString());
         System.out.println("List5: "+list5.toString());
         list4.merge(list5);
