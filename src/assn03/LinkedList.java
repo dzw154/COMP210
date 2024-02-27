@@ -53,10 +53,10 @@ public class LinkedList<T> {
         if (list2.size()!=size)
             return false;
         while (current != null){
-            if (!(list2.contains(current))){
+            if (!(list2.contains(current.getValue()))){
                 return false;
             }
-            if (list2.indexOf(current)!=indexOf(current)){
+            if (list2.indexOf(current.getValue())!=indexOf(current.getValue())){
                 return false;
             }
             current = current.getNext();
