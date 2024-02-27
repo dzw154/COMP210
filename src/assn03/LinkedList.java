@@ -53,7 +53,7 @@ public class LinkedList<T> {
         if (list2.size()!=size)
             return false;
         while (current != null){
-            if (!list2.contains(current)){
+            if (!(list2.contains(current))){
                 return false;
             }
             if (list2.indexOf(current)!=indexOf(current)){
@@ -99,17 +99,17 @@ public class LinkedList<T> {
         Node<T> current = head;
         int currSize = size;
         int i = 1;
-        if (currSize > 1){
-            while (i<currSize){
-                add(get(currSize-i));
+        if (currSize > 1) {
+            while (i < currSize) {
+                add(get(currSize - i));
                 i++;
             }
             add(get(0));
-        }
-        while (i>0){
-            remove(current.getValue());
-            current = current.getNext();
-            i--;
+            while (i > 0) {
+                remove(current.getValue());
+                current = current.getNext();
+                i--;
+            }
         }
 
     }
