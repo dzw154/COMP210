@@ -7,14 +7,17 @@ public class Main {
     You should add more examples and use this class to debug your code
     */
     BST<Integer> bst = new NonEmptyBST<Integer>(0);
-      bst = bst.insert(1);
-      bst = bst.insert(2);
+
       bst = bst.insert(3);
       bst = bst.insert(4);
+      bst = bst.insert(1);
+      bst = bst.insert(2);
       bst = bst.insert(5);
       bst = bst.insert(6);
+      bst = bst.insert(-1);
+      bst = bst.insert(100);
+      bst = bst.insert(30);
       bst.printPreOrderTraversal();
-
   }
 
 }
