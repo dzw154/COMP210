@@ -17,7 +17,9 @@ public class Main {
       bst = bst.insert(-1);
       bst = bst.insert(100);
       bst = bst.insert(30);
-      bst.printPreOrderTraversal();
+      bst = bst.remove(-1);
+    bst = bst.remove(4);
+    bst.printPreOrderTraversal();
   }
 
 }

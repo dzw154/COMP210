@@ -43,16 +43,19 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 	// TODO: remove
 	@Override
 	public BST<T> remove(T element) {
-		if (element.compareTo(this._element) > 0){
+		if ((!this._right.isEmpty()) && element.compareTo(this._element) > 0){
 			this._right.remove(element);
 		}
-		if (element.compareTo(this._element) < 0){
+		if ((!this._right.isEmpty()) && element.compareTo(this._element) < 0){
 			this._left.remove(element);
 		}
-		if (element.compareTo(this._element) == 0){
+		if (!this._right.isEmpty() && element.compareTo(this._element) == 0){
 			this._element = this._right.findMin();
+			this._right = this._right.getRight();
 		}
-
+		if ((this._left.isEmpty() && this._right.isEmpty()) && element.compareTo(this._element) == 0){
+			this._element = null;
+		}
 		return this;
 	}
 	
