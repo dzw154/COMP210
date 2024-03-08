@@ -16,18 +16,22 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 	// TODO: insert
 	@Override
 	public BST<T> insert(T element) {
-		if (this._element == null){
+		if (this._element == null) {
 			this._element = element;
-		}
-		if (element.compareTo(this._element) > 0){
-			this._right.insert(element);
-		}
-		else{
-			this._left.insert(element);
+		} else {
+			if (this._element.compareTo(element) == 0) {
+				return this;
+			}
+			if (element.compareTo(this._element) > 0) {
+				this._right.insert(element);
+			} else {
+				this._left.insert(element);
+			}
 		}
 		return this;
 	}
-	
+
+
 	// TODO: remove
 	@Override
 	public BST<T> remove(T element) {
