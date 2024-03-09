@@ -66,6 +66,30 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 	// TODO: remove all in range (inclusive)
 	@Override
 	public BST<T> remove_range(T start, T end) {
+		if (this.isEmpty()){
+			return new EmptyBST<>();
+		}
+		if (start.compareTo(_element) < 0){
+			_right = _right.remove_range(start, end);
+		}
+		if (end.compareTo(_element) > 0){
+			_right = _right.remove_range(start, end);
+		}
+		if (start.compareTo(_element) <= 0 && end.compareTo(_element) >= 0){
+			if (_left.isEmpty() && _right.isEmpty()){
+				return new EmptyBST<>();
+			}
+			else if (_right.isEmpty()){
+				return _left;
+			}
+			else if (_left.isEmpty()){
+				return _right;
+			}
+			else{
+				_element = _right.findMin();
+				_right = _right.remove(_element);
+			}
+		}
 
 		return null;
 	}
@@ -73,11 +97,21 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 	// TODO: printPreOrderTraversal
 	@Override
 	public void printPreOrderTraversal() {
+		if (this._element != null){
+			System.out.print(this._element + " ");
+			this._left.printPreOrderTraversal();
+			this._right.printPreOrderTraversal();
+		}
 	}
 
 	// TODO: printPostOrderTraversal
 	@Override
 	public void printPostOrderTraversal() {
+		if (this._element != null) {
+			this._left.printPreOrderTraversal();
+			this._right.printPreOrderTraversal();
+			System.out.print(this._element + " ");
+		}
 	}
 
 	// The findMin method returns the minimum value in the tree.

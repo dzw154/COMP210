@@ -17,15 +17,24 @@ public class Main {
       bst = bst.insert(-1);
       bst = bst.insert(100);
       bst = bst.insert(30);
-      bst = bst.remove(-1);
-    bst = bst.remove(4);
+      // bst = bst.remove(-1);
+      // bst = bst.remove(4);
+    bst.printPreOrderTraversal();
+    System.out.println();
 
+    bst.printPostOrderTraversal();
+    System.out.println();
+
+    System.out.println();
 
 
     BST<Integer> ssss = new NonEmptyBST<>(1);
     ssss = ssss.insert(-1);
-    ssss = ssss.remove(1);
-    bst.printPreOrderTraversal();
+    ssss.printPreOrderTraversal();
+    System.out.println();
+
+    // ssss = ssss.remove(1);
+    ssss.printPostOrderTraversal();
   }
 
 }
