@@ -70,12 +70,12 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 			return new EmptyBST<>();
 		}
 		if (start.compareTo(this._element) < 0){
-			this._right = this._right.remove_range(start, end);
+			this._left = this._left.remove_range(start, end);
 		}
 		if (end.compareTo(this._element) > 0){
 			this._right = this._right.remove_range(start, end);
 		}
-		if (start.compareTo(this._element) <= 0 && end.compareTo(this._element) >= 0){
+		if ((start.compareTo(this._element) == 0) && (end.compareTo(this._element) == 0)){
 			if (this._left.isEmpty() && this._right.isEmpty()){
 				return new EmptyBST<>();
 			}
@@ -91,7 +91,7 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 			}
 		}
 
-		return null;
+		return this;
 	}
 
 	// TODO: printPreOrderTraversal
