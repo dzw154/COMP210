@@ -43,24 +43,22 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 	// TODO: remove
 	@Override
 	public BST<T> remove(T element) {
-		if ((!this._right.isEmpty()) && element.compareTo(this._element) > 0){
-			this._right.remove(element);
+		if ((!this._right.isEmpty()) && element.compareTo(this._element) > 0){ // Enters right tree if element is larger than this._element
+			this._right = this._right.remove(element);
 		}
-		if ((!this._right.isEmpty()) && element.compareTo(this._element) < 0){
-			this._left.remove(element);
+		else if ((!this._left.isEmpty()) && element.compareTo(this._element) < 0){ // Enters left tree if element is smaller than this._element
+			this._left = this._left.remove(element);
 		}
-		if (!this._right.isEmpty() && element.compareTo(this._element) == 0){
+		else if (!this._right.isEmpty() && element.compareTo(this._element) == 0){ // Replaces current element with smallest element in right tree
 			this._element = this._right.findMin();
 			this._right = this._right.getRight();
 		}
-		if (this._right.isEmpty() && element.compareTo(this._element) == 0){
+		else if ((this._right.isEmpty() && this.getHeight() > 1) && element.compareTo(this._element) == 0){ // If right tree is empty replaces current element with largest element in left tree
 			this._element = this._left.getElement();
 			this._left = this._left.getLeft();
 		}
-		if ((this._left.isEmpty() && this._right.isEmpty()) && element.compareTo(this._element) == 0){
-			this._element = null;
-			this._left = new EmptyBST<>();
-			this._right = new EmptyBST<>();
+		else if ((this._left.isEmpty() && this._right.isEmpty()) && element.compareTo(this._element) == 0){ // Deletes leaves
+			return new EmptyBST<>();
 		}
 		return this;
 	}
