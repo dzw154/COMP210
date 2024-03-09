@@ -29,10 +29,10 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 			if (element.compareTo(this._element) < 0) {
 				this._left.insert(element);
 			}
-			if (this._right.isEmpty() && element.compareTo(this._element) > 0){
+			if (this._right.isEmpty() && element.compareTo(this._element) > 0) {
 				this._right = new NonEmptyBST<T>(element);
 			}
-			if (this._left.isEmpty() && element.compareTo(this._element) < 0){
+			if (this._left.isEmpty() && element.compareTo(this._element) < 0) {
 				this._left = new NonEmptyBST<T>(element);
 			}
 		}
