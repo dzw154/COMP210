@@ -19,6 +19,12 @@ public class Main {
       bst = bst.insert(30);
       bst = bst.remove(-1);
     bst = bst.remove(4);
+
+
+
+    BST<Integer> ssss = new NonEmptyBST<>(1);
+    ssss = ssss.insert(-1);
+    ssss = ssss.remove(1);
     bst.printPreOrderTraversal();
   }
 

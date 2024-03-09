@@ -53,7 +53,7 @@ public class NonEmptyBST<T extends Comparable<T>> implements BST<T> {
 			this._element = this._right.findMin();
 			this._right = this._right.getRight();
 		}
-		else if ((this._right.isEmpty() && this.getHeight() > 1) && element.compareTo(this._element) == 0){ // If right tree is empty replaces current element with largest element in left tree
+		else if ((this._right.isEmpty() && this.getHeight() > 0) && element.compareTo(this._element) == 0){ // If right tree is empty replaces current element with largest element in left tree
 			this._element = this._left.getElement();
 			this._left = this._left.getLeft();
 		}
