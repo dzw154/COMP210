@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         testP1();
         testP2();
-//        testP3();
+        //  testP3();
         testP4();
     }
 
@@ -33,6 +33,7 @@ public class Main {
        /*
         Part 2 - Write some tests to convince yourself that your code for Part 2 is working
          */
+        System.out.println("Test2");
         MaxBinHeapER ewa = new MaxBinHeapER();
         ewa.enqueue(4, 2);
 
@@ -54,7 +55,21 @@ public class Main {
             System.out.println(ewa.getAsArray()[i].getPriority());
         }
         System.out.println();
-
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
 
 
     }
@@ -78,7 +93,7 @@ public class Main {
                /*
         Part 4 - Write some tests to convince yourself that your code for Part 4 is working
          */
-        System.out.println(Arrays.toString(compareRuntimes()));
+
     }
 
     public static void fillER(MaxBinHeapER complexER) {

@@ -81,7 +81,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
         for (int i = 0; i < _heap.size(); i++){
             Integer patVal = (Integer) _heap.get(i).getValue();
             if (val == patVal){
-                Integer oldPrio = (Integer) _heap.get(i).getValue();
+                Integer oldPrio = (Integer) _heap.get(i).getPriority();
                 _heap.set(i, new Patient<V, P>(value,newPriority));
                 if(newPrio > oldPrio){
                     bubbleDown(i);
@@ -100,9 +100,10 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
      */
     // TODO (Task 3): overloaded constructor
     public MaxBinHeapER(Prioritized<V, P>[] initialEntries ) {
+        _heap = new ArrayList<>();
         for (int i = 0; i < initialEntries.length; i++){
             _heap.add(initialEntries[i]);
-            bubbleUp(_heap.size());
+            bubbleUp(_heap.size()-1);
         }
     }
 
