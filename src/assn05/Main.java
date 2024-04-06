@@ -35,41 +35,44 @@ public class Main {
          */
         System.out.println("Test2");
         MaxBinHeapER ewa = new MaxBinHeapER();
-        ewa.enqueue(4, 2);
+        ewa.enqueue(4, 1234);
 
 
-        ewa.enqueue(1,1);
+        ewa.enqueue(1,132);
 
 
-        ewa.enqueue(9,4);
+        ewa.enqueue(9,645);
 
 
         ewa.enqueue(2,7);
+        ewa.enqueue(10,3245);
+        ewa.enqueue(5,12);
         System.out.println();
+//        for (int i = 0; i<ewa.getAsArray().length; i++){
+//            System.out.println(ewa.getAsArray()[i].getPriority());
+//        }
+//        System.out.println(ewa.getMax());
+
+        ewa.updatePriority(4, 3);
         for (int i = 0; i<ewa.getAsArray().length; i++){
             System.out.println(ewa.getAsArray()[i].getPriority());
         }
         System.out.println();
-        ewa.updatePriority(2, 3);
-        for (int i = 0; i<ewa.getAsArray().length; i++){
-            System.out.println(ewa.getAsArray()[i].getPriority());
-        }
-        System.out.println();
-        ewa.dequeue();
-        for (int i = 0; i<ewa.getAsArray().length; i++){
-            System.out.println(ewa.getAsArray()[i].getPriority());
-        }
-        System.out.println();
-        ewa.dequeue();
-        for (int i = 0; i<ewa.getAsArray().length; i++){
-            System.out.println(ewa.getAsArray()[i].getPriority());
-        }
-        System.out.println();
-        ewa.dequeue();
-        for (int i = 0; i<ewa.getAsArray().length; i++){
-            System.out.println(ewa.getAsArray()[i].getPriority());
-        }
-        System.out.println();
+//        ewa.dequeue();
+//        for (int i = 0; i<ewa.getAsArray().length; i++){
+//            System.out.println(ewa.getAsArray()[i].getPriority());
+//        }
+//        System.out.println();
+//        ewa.dequeue();
+//        for (int i = 0; i<ewa.getAsArray().length; i++){
+//            System.out.println(ewa.getAsArray()[i].getPriority());
+//        }
+//        System.out.println();
+//        ewa.dequeue();
+//        for (int i = 0; i<ewa.getAsArray().length; i++){
+//            System.out.println(ewa.getAsArray()[i].getPriority());
+//        }
+//        System.out.println();
 
 
     }

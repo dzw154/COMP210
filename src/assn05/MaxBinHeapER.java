@@ -76,17 +76,17 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
 
     // TODO (part 2B) : updatePriority
     public void updatePriority(V value, P newPriority) {
-        Integer val = (Integer) value;
-        Integer newPrio = (Integer) newPriority;
+        V val = value;
+        P newPrio =  newPriority;
         for (int i = 0; i < _heap.size(); i++){
-            Integer patVal = (Integer) _heap.get(i).getValue();
-            if (val == patVal){
-                Integer oldPrio = (Integer) _heap.get(i).getPriority();
+            V patVal =  _heap.get(i).getValue();
+            if (val.equals(patVal)){
+                P oldPrio = _heap.get(i).getPriority();
                 _heap.set(i, new Patient<V, P>(value,newPriority));
-                if(newPrio > oldPrio){
+                if(newPrio.compareTo(oldPrio)>0){
                     bubbleDown(i);
                 }
-                if (newPrio < oldPrio){
+                if (newPrio.compareTo(oldPrio)<0){
                     bubbleUp(i);
                 }
 
