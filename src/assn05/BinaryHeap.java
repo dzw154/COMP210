@@ -16,7 +16,7 @@ public interface BinaryHeap<V,P extends Comparable<P>> {
     void enqueue(V value, P priority);
 
     /**
-     * Remove the element with the smallest priority from the heap
+     * Remove the element with the LARGEST priority from the heap
      * and return its value
      * @return the value of the removed element
      */
