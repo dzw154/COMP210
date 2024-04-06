@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 3.2 - errors" />
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 3.3 - dequeue in unexpected order" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712377171072</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Assn05 - 3.3 - dequeue in unexpected order">
+      <option name="closed" value="true" />
+      <created>1712377581356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712377581356</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,7 +185,8 @@
     <MESSAGE value="Assn05 - 3 - errors" />
     <MESSAGE value="Assn05 - 3.1 - errors" />
     <MESSAGE value="Assn05 - 3.2 - errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 3.2 - errors" />
+    <MESSAGE value="Assn05 - 3.3 - dequeue in unexpected order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 3.3 - dequeue in unexpected order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
