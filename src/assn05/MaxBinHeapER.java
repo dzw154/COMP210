@@ -22,21 +22,21 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
 
     // TODO (Task 2A): enqueue
     public void enqueue(V value) {
-        _heap.add(new Patient<>(value));
+        _heap.add(_heap.size(), new Patient<>(value));
         bubbleUp(size()-1);
     }
 
     // TODO (Task 2A): enqueue
     @Override
     public void enqueue(V value, P priority) {
-        _heap.add(new Patient<>(value, priority));
+        _heap.add(_heap.size(), new Patient<>(value, priority));
         bubbleUp(_heap.size()-1);
     }
 
     // TODO (Task 2A): dequeue
     @Override
     public V dequeue() {
-        if (_heap.isEmpty()){
+        if (_heap.size() == 0){
             return null;
         } else if (_heap.size() == 1) {
             V value = _heap.get(0).getValue();
@@ -56,7 +56,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
     // TODO (Task 2A): getMax
     @Override
     public V getMax() {
-        if (_heap.isEmpty()){
+        if (_heap.size() == 0){
             return null;
         }
         else {
