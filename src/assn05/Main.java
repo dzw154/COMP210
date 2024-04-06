@@ -53,26 +53,26 @@ public class Main {
 //        }
 //        System.out.println(ewa.getMax());
 
-        ewa.updatePriority(4, 3);
+//        ewa.updatePriority(4, 3);
         for (int i = 0; i<ewa.getAsArray().length; i++){
             System.out.println(ewa.getAsArray()[i].getPriority());
         }
         System.out.println();
-//        ewa.dequeue();
-//        for (int i = 0; i<ewa.getAsArray().length; i++){
-//            System.out.println(ewa.getAsArray()[i].getPriority());
-//        }
-//        System.out.println();
-//        ewa.dequeue();
-//        for (int i = 0; i<ewa.getAsArray().length; i++){
-//            System.out.println(ewa.getAsArray()[i].getPriority());
-//        }
-//        System.out.println();
-//        ewa.dequeue();
-//        for (int i = 0; i<ewa.getAsArray().length; i++){
-//            System.out.println(ewa.getAsArray()[i].getPriority());
-//        }
-//        System.out.println();
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
+        ewa.dequeue();
+        for (int i = 0; i<ewa.getAsArray().length; i++){
+            System.out.println(ewa.getAsArray()[i].getPriority());
+        }
+        System.out.println();
 
 
     }
