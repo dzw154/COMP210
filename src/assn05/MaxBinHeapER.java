@@ -39,12 +39,12 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
         if (_heap.isEmpty()){
             return null;
         } else if (_heap.size() == 1) {
-            V value = _heap.getFirst().getValue();
-            _heap.removeFirst();
+            V value = _heap.get(0).getValue();
+            _heap.remove(0);
             return value;
         }
         else{
-            V value = _heap.getFirst().getValue();
+            V value = _heap.get(0).getValue();
             _heap.set(0, _heap.get(_heap.size()-1));
             _heap.remove(_heap.size()-1);
             bubbleDown(0);
@@ -61,7 +61,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
         }
         else {
 
-            Integer max = (Integer) _heap.getFirst().getValue();
+            Integer max = (Integer) _heap.get(0).getValue();
             for (int i = 0; i < _heap.size(); i++){
                 Integer point = (Integer) _heap.get(i).getValue();
                 if (point >= max){
