@@ -114,7 +114,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
         else{
             Prioritized <V, P> child = _heap.get(index);
             Prioritized<V, P> parent = _heap.get((index-1)/2);
-            if (child.getPriority().compareTo(parent.getPriority()) < 0){
+            if (child.getPriority().compareTo(parent.getPriority()) > 0){
                 _heap.set((index-1)/2, child);
                 _heap.set(index,parent);
                 return (bubbleUp((index-1)/2));
@@ -132,7 +132,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
         }
         else if (!hasRightChild(index)){
             Prioritized<V,P> leftChild = _heap.get(leftChildInd(index));
-            if (leftChild.getPriority().compareTo(parent.getPriority()) < 0){
+            if (leftChild.getPriority().compareTo(parent.getPriority()) > 0){
                 _heap.set(index,leftChild);
                 _heap.set(leftChildInd(index),parent);
                 bubbleDown(leftChildInd(index));
