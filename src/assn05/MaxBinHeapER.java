@@ -22,14 +22,16 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
 
     // TODO (Task 2A): enqueue
     public void enqueue(V value) {
-        _heap.add(_heap.size(), new Patient<>(value));
+        Patient patient = new Patient(value);
+        _heap.add(_heap.size(), patient);
         bubbleUp(size()-1);
     }
 
     // TODO (Task 2A): enqueue
     @Override
     public void enqueue(V value, P priority) {
-        _heap.add(_heap.size(), new Patient<>(value, priority));
+        Patient patient = new Patient(value, priority);
+        _heap.add(_heap.size(), patient);
         bubbleUp(_heap.size()-1);
     }
 
