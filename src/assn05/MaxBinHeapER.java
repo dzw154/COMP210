@@ -58,9 +58,9 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
     // TODO (Task 2A): getMax
     @Override
     public V getMax() {
-        return _heap.getFirst().getValue();
+        return _heap.get(0).getValue();
         }
-    }
+
 
     // TODO (part 2B) : updatePriority
     public void updatePriority(V value, P newPriority) {
