@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 3.91 - getMax">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 4.0 - bubbleDown">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assn05/MaxBinHeapER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn05/MaxBinHeapER.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloWorld.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.Part2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712456796898</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Assn05 - 4.0 - bubbleDown">
+      <option name="closed" value="true" />
+      <created>1712457594299</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712457594299</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,15 +268,16 @@
     <MESSAGE value="Assn05 - 3.8" />
     <MESSAGE value="Assn05 - 3.9 - getMax" />
     <MESSAGE value="Assn05 - 3.91 - getMax" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 3.91 - getMax" />
+    <MESSAGE value="Assn05 - 4.0 - bubbleDown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 4.0 - bubbleDown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/assn05/Main.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="5" />
+          <line>60</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
