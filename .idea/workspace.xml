@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 3.7">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn05 - 3.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assn05/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn05/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712440626879</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Assn05 - 3.8">
+      <option name="closed" value="true" />
+      <created>1712445150826</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712445150826</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,6 +232,7 @@
     <MESSAGE value="Assn05 - 3.5 - errors" />
     <MESSAGE value="Assn05 - 3.6" />
     <MESSAGE value="Assn05 - 3.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 3.7" />
+    <MESSAGE value="Assn05 - 3.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn05 - 3.8" />
   </component>
 </project>

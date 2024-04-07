@@ -58,19 +58,7 @@ public class MaxBinHeapER  <V, P extends Comparable<P>> implements BinaryHeap<V,
     // TODO (Task 2A): getMax
     @Override
     public V getMax() {
-        if (_heap.size() == 0){
-            return null;
-        }
-        else {
-
-            Integer max = (Integer) _heap.get(0).getValue();
-            for (int i = 0; i < _heap.size(); i++){
-                Integer point = (Integer) _heap.get(i).getValue();
-                if (point >= max){
-                    max = point;
-                }
-            }
-            return (V) max;
+        return _heap.getFirst().getValue();
         }
     }
 
