@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn06 - 1.0 - first submit">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn06 - 2.0 - contains, rangeContains, insert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assn06/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn06/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assn06/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn06/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713491175261</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Assn06 - 2.0 - contains, rangeContains, insert">
+      <option name="closed" value="true" />
+      <created>1713492730471</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713492730473</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -296,7 +305,8 @@
     <MESSAGE value="Assn05 - 4.0 - bubbleDown" />
     <MESSAGE value="Assn05 - 4.1 - bubbleDown" />
     <MESSAGE value="Assn06 - 1.0 - first submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn06 - 1.0 - first submit" />
+    <MESSAGE value="Assn06 - 2.0 - contains, rangeContains, insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn06 - 2.0 - contains, rangeContains, insert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
