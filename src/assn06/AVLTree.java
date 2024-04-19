@@ -13,7 +13,7 @@ public class AVLTree<T extends Comparable<T>> implements SelfBalancingBST<T> {
         _left = null;
         _right = null;
         _height = -1;
-        _size = 0;
+        _size = -1;
     }
 
     /**
