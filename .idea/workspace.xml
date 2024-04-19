@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn06 - 3.0 - contains, rangeContains, insert, rotate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn06 - 3.2 - remove">
       <change beforePath="$PROJECT_DIR$/src/assn06/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn06/AVLTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -289,7 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713495212232</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Assn06 - 3.1 - remove">
+      <option name="closed" value="true" />
+      <created>1713495906603</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713495906603</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Assn06 - 3.2 - remove">
+      <option name="closed" value="true" />
+      <created>1713496018845</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713496018845</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -314,7 +329,9 @@
     <MESSAGE value="Assn06 - 1.0 - first submit" />
     <MESSAGE value="Assn06 - 2.0 - contains, rangeContains, insert" />
     <MESSAGE value="Assn06 - 3.0 - contains, rangeContains, insert, rotate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn06 - 3.0 - contains, rangeContains, insert, rotate" />
+    <MESSAGE value="Assn06 - 3.1 - remove" />
+    <MESSAGE value="Assn06 - 3.2 - remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn06 - 3.2 - remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
