@@ -87,23 +87,31 @@ public class AVLTree<T extends Comparable<T>> implements SelfBalancingBST<T> {
     public SelfBalancingBST<T> remove(T element) {
          // when 2 children, replace with minimum from right subtree
     	// TODO
-        if (isEmpty()){
-            return null;
+        if (_height == -1){
+            return new AVLTree<>();
         }
-        if (_value.compareTo(element) > 0){
+        if (_left._value == null && _right._value == null){
+            return new AVLTree<>();
+        }
+        else if (_value.compareTo(element) > 0){
             _right = (AVLTree<T>) _right.remove(element);
         } else if (_value.compareTo(element) < 0){
             _left = (AVLTree<T>) _left.remove(element);
         }
-        else{
-            if (_left == null){
-                return _right;
-            } else if (_right == null) {
-                return _left;
+        else {
+            if (_left._value != null && _right._value != null) {
+                _value = _right.findMin();
+                _right = (AVLTree<T>) _right.remove(_value);
             }
-            _value = _right.findMin();
-            _right = (AVLTree<T>) _right.remove(_value);
+            else if (_right._value != null){
+                _value = _right._value;
+                _right = (AVLTree<T>) _right.remove(_value);
             }
+            else {
+                _value = _left._value;
+                _left = (AVLTree<T>) _left.remove(_value);
+            }
+        }
         this.updateHeightandSize();
         this.rotate();
         return this;
