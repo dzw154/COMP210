@@ -91,9 +91,9 @@ public class AVLTree<T extends Comparable<T>> implements SelfBalancingBST<T> {
         if (_left._value == null && _right._value == null) {
             return new AVLTree<>();
         } else if (_value.compareTo(element) > 0) {
-            _right = (AVLTree<T>) _right.remove(element);
-        } else if (_value.compareTo(element) < 0) {
             _left = (AVLTree<T>) _left.remove(element);
+        } else if (_value.compareTo(element) < 0) {
+            _right = (AVLTree<T>) _right.remove(element);
         } else {
             if (_left._value != null && _right._value != null) {
                 _value = _right.findMin();
