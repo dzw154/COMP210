@@ -24,15 +24,18 @@ public class PasswordManager<K,V> implements Map<K,V> {
         }
         else{
             Account pointer = _passwords[kHash];
-            while (pointer.getNext()!= null){
+            while (pointer!= null){
                 if (pointer.getWebsite().equals(key)){
                     pointer.setPassword(value);
                     return;
                 }
+                if (pointer.getNext() == null){
+                    pointer.setNext(newAcc);
+                    _size ++;
+                    return;
+                }
                 pointer = pointer.getNext();
             }
-            pointer.setNext(newAcc);
-            _size ++;
         }
     }
 

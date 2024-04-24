@@ -10,6 +10,7 @@ public class Main {
 
         // your code below
         passwordManager.put("Aa", "1");
+        passwordManager.put("Aa", "2");
         passwordManager.put("BB", "2");
         passwordManager.put("BBBBBB","3");
         passwordManager.put("BBAaBB","6");
