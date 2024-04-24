@@ -31,7 +31,7 @@ public class PasswordManager<K,V> implements Map<K,V> {
                 }
                 pointer = pointer.getNext();
             }
-            pointer.setNext(newAcc);
+            pointer = newAcc;
             _passwords[kHash] = pointer;
             _size ++;
         }
