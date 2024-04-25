@@ -35,7 +35,7 @@ public class Main {
 
             // Command not found
             if (!phrase.equals("New password") && !phrase.equals("Get password")
-                    && !phrase.equals("Delete account") && !phrase.equals("Check duplicate account")
+                    && !phrase.equals("Delete account") && !phrase.equals("Check duplicate password")
                     && !phrase.equals("Get accounts") && !phrase.equals("Generate random password")
                     && !phrase.equals("Exit")){
                 System.out.println("Command not found");
@@ -73,14 +73,14 @@ public class Main {
                     }
                 }
 
-                // Check duplicate account
-                if (phrase.equals("Check duplicate account")){
+                // Check duplicate password
+                if (phrase.equals("Check duplicate password")){
                     String pass = scanner.nextLine();
                     if (passwordManager.checkDuplicate(pass) == null){
-                        System.out.println("No accounts using that password");
+                        System.out.println("No account uses that password");
                     }
                     else{
-                        System.out.println("Accounts using that password:");
+                        System.out.println("Websites using that password:");
                         Object[] shared = passwordManager.checkDuplicate(pass).toArray();
                         for (int i = 0; i < shared.length; i++){
                             System.out.println(shared[i]);
@@ -100,6 +100,7 @@ public class Main {
                 // Generate random password
                 if (phrase.equals("Generate random password")){
                     int Size = scanner.nextInt();
+                    String white = scanner.nextLine();
                     System.out.println(passwordManager.generatesafeRandomPassword(Size));
                 }
 
@@ -109,7 +110,6 @@ public class Main {
                 }
             }
         }
-
 
 
 
