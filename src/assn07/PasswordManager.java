@@ -87,6 +87,7 @@ public class PasswordManager<K,V> implements Map<K,V> {
             if (current.getWebsite().equals(key)) {
                 V pass = (V) current.getPassword();
                 current = current.getNext();
+                _size --;
                 return pass;
             }
             // Searches for an item at the index with a matching website
@@ -99,6 +100,7 @@ public class PasswordManager<K,V> implements Map<K,V> {
             else{
                 V pass = (V) current.getNext().getPassword();
                 current.setNext(current.getNext().getNext());
+                _size --;
                 return pass;
             }
         }
