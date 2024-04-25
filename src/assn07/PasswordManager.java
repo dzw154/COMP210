@@ -145,10 +145,9 @@ public class PasswordManager<K,V> implements Map<K,V> {
         Random random = new Random();
 
         // TODO: Ensure the minimum length is 4
-        if (length < 4){
-            throw new RuntimeException("Minimum password length must be 4");
+        if (length < 4) {
+            targetStringLength = 4;
         }
-
 
         String generatedString = random.ints(leftLimit, rightLimit + 1)
                 .filter(i -> (i <= 57 || i >= 65) && (i <= 90 || i >= 97))

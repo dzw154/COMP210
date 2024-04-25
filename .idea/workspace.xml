@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.23 - remove">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.3 - keySet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assn07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn07/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assn07/PasswordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn07/PasswordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -396,13 +397,42 @@
       <option name="project" value="LOCAL" />
       <updated>1714014898940</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Assn07 Ver 1.24 - remove">
+      <option name="closed" value="true" />
+      <created>1714018096680</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1714018096680</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Assn07 Ver 1.24 - remove">
+      <option name="closed" value="true" />
+      <created>1714018109852</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1714018109852</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Assn07 Ver 1.25 - remove">
+      <option name="closed" value="true" />
+      <created>1714018187077</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1714018187077</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Assn07 Ver 1.3 - keySet">
+      <option name="closed" value="true" />
+      <created>1714018331203</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1714018331203</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assn05 - 3.4 - dequeue in unexpected order" />
-    <MESSAGE value="Assn05 - 3.5 - errors" />
-    <MESSAGE value="Assn05 - 3.6" />
     <MESSAGE value="Assn05 - 3.7" />
     <MESSAGE value="Assn05 - 3.8" />
     <MESSAGE value="Assn05 - 3.9 - getMax" />
@@ -425,7 +455,10 @@
     <MESSAGE value="Assn07 Ver 1.21 - remove" />
     <MESSAGE value="Assn07 Ver 1.22 - remove" />
     <MESSAGE value="Assn07 Ver 1.23 - remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.23 - remove" />
+    <MESSAGE value="Assn07 Ver 1.24 - remove" />
+    <MESSAGE value="Assn07 Ver 1.25 - remove" />
+    <MESSAGE value="Assn07 Ver 1.3 - keySet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.3 - keySet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
