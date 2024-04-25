@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.02 - put">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.11 - checkDuplicate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assn07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn07/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assn07/PasswordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn07/PasswordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -349,12 +348,26 @@
       <option name="project" value="LOCAL" />
       <updated>1713926843879</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Assn07 Ver 1.03 - put">
+      <option name="closed" value="true" />
+      <created>1713927239691</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1713927239691</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Assn07 Ver 1.04 - put">
+      <option name="closed" value="true" />
+      <created>1713927355013</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713927355013</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assn05 - 1" />
-    <MESSAGE value="Assn05 - 2" />
     <MESSAGE value="Assn05 - 3 - errors" />
     <MESSAGE value="Assn05 - 3.1 - errors" />
     <MESSAGE value="Assn05 - 3.2 - errors" />
@@ -378,7 +391,9 @@
     <MESSAGE value="Assn07 - Hash Tables Part 1" />
     <MESSAGE value="Assn07 Ver 1.01 - put" />
     <MESSAGE value="Assn07 Ver 1.02 - put" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.02 - put" />
+    <MESSAGE value="Assn07 Ver 1.03 - put" />
+    <MESSAGE value="Assn07 Ver 1.04 - put" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.04 - put" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,11 +407,6 @@
           <url>file://$PROJECT_DIR$/src/assn06/Main.java</url>
           <line>20</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/assn07/Main.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

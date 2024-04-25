@@ -87,6 +87,7 @@ public class PasswordManager<K,V> implements Map<K,V> {
             V pass = (V) current.getPassword();
             if (current.getNext() == null){
                 current = null;
+                return pass;
             }
             else{
                 current = current.getNext();
@@ -105,8 +106,12 @@ public class PasswordManager<K,V> implements Map<K,V> {
         List<K> _same = new ArrayList<K> ();
         for (int i = 0; i < _passwords.length; i++){
             if (_passwords[i] != null){
-                if (_passwords[i].getPassword().equals(value)){
-                    _same.add((K) _passwords[i].getWebsite());
+                Account current = _passwords[i];
+                while (current != null){
+                    if (current.getPassword().equals(value)){
+                        _same.add((K) current.getWebsite());
+                    }
+                    current = current.getNext();
                 }
             }
         }
