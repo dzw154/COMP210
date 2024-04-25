@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.22 - remove">
+    <list default="true" id="e44cc287-3ac0-4f4a-b048-8fa5f45c53fe" name="Changes" comment="Assn07 Ver 1.23 - remove">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assn07/PasswordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assn07/PasswordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1714014177418</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Assn07 Ver 1.23 - remove">
+      <option name="closed" value="true" />
+      <created>1714014898940</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1714014898940</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assn05 - 3.3 - dequeue in unexpected order" />
     <MESSAGE value="Assn05 - 3.4 - dequeue in unexpected order" />
     <MESSAGE value="Assn05 - 3.5 - errors" />
     <MESSAGE value="Assn05 - 3.6" />
@@ -416,7 +424,8 @@
     <MESSAGE value="Assn07 Ver 1.11 - checkDuplicate" />
     <MESSAGE value="Assn07 Ver 1.21 - remove" />
     <MESSAGE value="Assn07 Ver 1.22 - remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.22 - remove" />
+    <MESSAGE value="Assn07 Ver 1.23 - remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assn07 Ver 1.23 - remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
