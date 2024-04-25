@@ -83,6 +83,9 @@ public class PasswordManager<K,V> implements Map<K,V> {
         while (current != null && current.getWebsite() != key) {
             current = current.getNext();
         }
+        if (current == null){
+            return null;
+        }
         if (current.getWebsite().equals(key)){
             V pass = (V) current.getPassword();
             if (current.getNext() == null){
