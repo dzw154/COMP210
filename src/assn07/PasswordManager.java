@@ -77,31 +77,31 @@ public class PasswordManager<K,V> implements Map<K,V> {
     public V remove(K key) {
         int kHash = abs(key.hashCode())% _passwords.length;
         Account current = _passwords[kHash];
+
+        // If the key does not exist, return null
         if (current == null){
             return null;
         }
-        while (current != null && current.getWebsite() != key) {
-            current = current.getNext();
-        }
-        if (current == null){
-            return null;
-        }
-        if (current.getWebsite().equals(key)){
-            V pass = (V) current.getPassword();
-            if (current.getNext() == null){
-                current = null;
-                _size--;
+        else{
+            // If the first item at the index has a matching key
+            if (current.getWebsite().equals(key)) {
+                V pass = (V) current.getPassword();
+                current = current.getNext();
                 return pass;
             }
-            else{
+            // Searches for an item at the index with a matching website
+            while (current.getNext() != null && current.getNext().getWebsite() != key){
                 current = current.getNext();
-                current.setNext(current.getNext().getNext());
             }
-            _passwords[kHash] = current;
-            _size --;
-            return pass;
+            if (current.getNext().getWebsite() == null){
+                return null;
+            }
+            else{
+                V pass = (V) current.getNext().getPassword();
+                current.setNext(current.getNext().getNext());
+                return pass;
+            }
         }
-        return null;
     }
 
     // TODO: checkDuplicate
