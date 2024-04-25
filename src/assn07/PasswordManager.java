@@ -87,6 +87,7 @@ public class PasswordManager<K,V> implements Map<K,V> {
             V pass = (V) current.getPassword();
             if (current.getNext() == null){
                 current = null;
+                _size--;
                 return pass;
             }
             else{
