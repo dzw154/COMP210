@@ -76,7 +76,7 @@ public class Main {
                 // Check duplicate password
                 if (phrase.equals("Check duplicate password")){
                     String pass = scanner.nextLine();
-                    if (passwordManager.checkDuplicate(pass) == null){
+                    if (passwordManager.checkDuplicate(pass).isEmpty()){
                         System.out.println("No account uses that password");
                     }
                     else{
