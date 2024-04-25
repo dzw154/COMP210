@@ -66,7 +66,11 @@ public class PasswordManager<K,V> implements Map<K,V> {
         Set<K> _websites = new HashSet<>();
         for (int i = 0; i < _passwords.length; i++){
             if (_passwords[i] != null){
-                _websites.add((K) _passwords[i].getWebsite());
+                Account current = _passwords[i];
+                while (current != null){
+                    _websites.add((K) current.getWebsite());
+                    current = current.getNext();
+                }
             }
         }
         return _websites;
