@@ -77,11 +77,11 @@ public class PasswordManager<K,V> implements Map<K,V> {
     public V remove(K key) {
         int kHash = abs(key.hashCode())% _passwords.length;
         Account current = _passwords[kHash];
-        while (current != null && current.getWebsite() != key) {
-            current = current.getNext();
-        }
         if (current == null){
             return null;
+        }
+        while (current != null && current.getWebsite() != key) {
+            current = current.getNext();
         }
         if (current.getWebsite().equals(key)){
             V pass = (V) current.getPassword();
